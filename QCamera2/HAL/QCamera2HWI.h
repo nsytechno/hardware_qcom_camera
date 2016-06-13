@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2014, The Linux Foundataion. All rights reserved.
+/* Copyright (c) 2012-2014,2016 The Linux Foundataion. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -86,7 +86,7 @@ typedef enum {
     QCAMERA_CH_TYPE_SNAPSHOT,
     QCAMERA_CH_TYPE_RAW,
     QCAMERA_CH_TYPE_METADATA,
-    QCAMERA_CH_TYPE_MAX
+    QCAMERA_CH_TY3PE_MAX
 } qcamera_ch_type_enum_t;
 
 typedef struct {
@@ -597,6 +597,7 @@ private:
     int32_t mOutputCount;
     bool mPreviewFrameSkipValid;
     cam_frame_idx_range_t mPreviewFrameSkipIdxRange;
+    QCameraVideoMemory *mVideoMem;
 };
 
 }; // namespace qcamera
